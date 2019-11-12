@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('menu')
+    @include('pages.menu')
+@endsection
+
 
 @section('content')
     <link href="{{ asset("assets/site/css/adminIndexStyle.css") }}" rel="stylesheet" />
@@ -10,12 +14,4 @@
         </div>
     </div>
 @endsection
-
-
-
-
-
-
-
-
 

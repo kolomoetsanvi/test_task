@@ -7,14 +7,12 @@
                 <a class="nav-link" href="">Добавление категорий</a>
             </li>
         @endif
-            @if(Auth::user()->role === 'distributor' || Auth::user()->role === 'manager')
+        @if(Auth::user()->role === 'distributor' || Auth::user()->role === 'manager')
             <li class="nav-item" >
                 <a class="nav-link" href="">Добавление товара</a>
             </li>
         @endif
-            <li class="nav-item" >
-                <a class="nav-link" href="">Категории</a>
-            </li>
+
     </ul>
 
     <!-- Right Side Of Navbar -->

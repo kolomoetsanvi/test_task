@@ -12,17 +12,14 @@
 */
 
 Route::group(['middleware'=>'web'],function (){
-
     Route::group(['/', 'middleware'=>'auth'], function (){
-        Route::match(['get','post'],'/', function (){
-            return view('home');
-        });
-
+//        Route::match(['get','post'],'/', function (){
+//            return view('home');
+//        });
+        Route::match(['get','post'],'/', ['uses'=>'HomeController@index','as'=>'home']);
     });
-
     Auth::routes();
 });
-
 
 
 
